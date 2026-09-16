@@ -13,15 +13,15 @@ try:
 except ImportError:
     YFINANCE_AVAILABLE = False
 
-file_id = "https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link"
+file_id = "https://drive.google.com/file/d/1OHhtCBMf0MnFlINsK4hBFCVfMwJvRYRf/view?usp=drive_link"
 
 gdown.download(
     file_id,
-    "rf_model.pkl",
+    "rf_model1.pkl",
     quiet=False
 )
 
-model = joblib.load("rf_model.pkl")
+model = joblib.load("rf_model1.pkl")
 
 print("Model loaded successfully")
 # ----------------------------------------------------------------------
@@ -142,7 +142,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 # ----------------------------------------------------------------------
 @st.cache_resource
 def load_model_artifacts():
-    model = joblib.load("rf_model.pkl")
+    model = joblib.load("rf_model1.pkl")
     scaler = joblib.load("scaler.pkl")
     try:
         with open("metrics.json") as f:
