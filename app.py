@@ -16,7 +16,7 @@ except ImportError:
 file_id = "https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link"
 
 gdown.download(
-    f"{https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link}",
+    f"https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link",
     "rf_model.pkl",
     quiet=False
 )
