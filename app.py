@@ -13,7 +13,7 @@ try:
 except ImportError:
     YFINANCE_AVAILABLE = False
 
-file_id = "https://drive.google.com/file/d/1OHhtCBMf0MnFlINsK4hBFCVfMwJvRYRf/view?usp=drive_link"
+file_id = "https://drive.google.com/file/d/1OHhtCBMf0MnFlINsK4hBFCVfMwJvRYRf/view?usp=sharing"
 
 gdown.download(
     file_id,
