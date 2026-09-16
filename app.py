@@ -1,3 +1,4 @@
+import gdown
 import json
 import numpy as np
 import pandas as pd
@@ -12,6 +13,17 @@ try:
 except ImportError:
     YFINANCE_AVAILABLE = False
 
+file_id = "https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link"
+
+gdown.download(
+    f"https://drive.google.com/uc?id={https://drive.google.com/file/d/1JdE3hyHG_X1SSeRcnUWc_kVAdwf3SuMw/view?usp=drive_link}",
+    "rf_model.pkl",
+    quiet=False
+)
+
+model = joblib.load("rf_model.pkl")
+
+print("Model loaded successfully")
 # ----------------------------------------------------------------------
 # PAGE CONFIG
 # ----------------------------------------------------------------------
